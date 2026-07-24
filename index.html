@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>김상재 | Backend Developer Portfolio</title>
+  <meta
+    name="description"
+    content="Spring Boot 기반 REST API 설계, JWT 인증 구조 구현, AWS ECS 배포까지 경험한 실행 중심 풀스택 개발자 김상재의 포트폴리오입니다."
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo">Kim<span>sangjae</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-photo">
+        <img src="assets/img/profile.jpg" alt="김상재 프로필 사진" />
+      </div>
+      <div>
+        <p class="hero-eyebrow">Backend Developer</p>
+        <h1 class="hero-name">김상재</h1>
+        <p class="hero-tagline">
+          Spring Boot 기반 REST API 설계, JWT 인증 구조 구현, AWS ECS 배포까지 경험한
+          실행 중심 풀스택 개발자입니다.
+        </p>
+        <div class="hero-links">
+          <a class="pill-link primary" href="mailto:kimsangjae94114@gmail.com">Email 보내기</a>
+          <a class="pill-link" href="https://github.com/Kim-sangjae" target="_blank" rel="noopener">GitHub</a>
+          <a class="pill-link" href="https://blog.naver.com/rlatkdwo94" target="_blank" rel="noopener">Blog</a>
+          <a class="pill-link" href="tel:010-8280-2984">010-8280-2984</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container reveal">
+      <div class="section-head">
+        <p class="section-tag">About</p>
+        <h2 class="section-title">이력</h2>
+        <p class="section-desc">학력, 자격증, 경력 사항입니다.</p>
+      </div>
+      <div class="career-grid" id="career">
+        <div class="career-col">
+          <h3>학력</h3>
+          <ul class="timeline">
+            <li>
+              <span class="period">2009.03 – 2012.02</span>
+              <span class="desc">국립전통예술고등학교 전통예술학과 졸업</span>
+            </li>
+            <li>
+              <span class="period">2012.03 – 2018.02</span>
+              <span class="desc">중앙대학교 국악 관현악과 졸업</span>
+            </li>
+          </ul>
+        </div>
+        <div class="career-col">
+          <h3>자격증</h3>
+          <ul class="timeline">
+            <li>
+              <span class="period">2019.04</span>
+              <span class="desc">문화예술교육사 2급</span>
+            </li>
+            <li>
+              <span class="period">2025.08</span>
+              <span class="desc">PCCE 2Lv</span>
+            </li>
+          </ul>
+        </div>
+        <div class="career-col">
+          <h3>경력</h3>
+          <ul class="timeline">
+            <li>
+              <span class="period">2023.02 – 2023.05</span>
+              <span class="desc">JAVA 기반 스프링 응용 SW 개발자 양성과정 국비교육 정상수료</span>
+            </li>
+            <li>
+              <span class="period">2024.03 – 2025.03</span>
+              <span class="desc">오르비스 온라인 판매 관리</span>
+            </li>
+            <li>
+              <span class="period">2025.08 – 2026.02</span>
+              <span class="desc">한화시스템 BEYOND SW 캠프 정상수료</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container reveal">
+      <div class="section-head">
+        <p class="section-tag">Stack</p>
+        <h2 class="section-title">기술 스택</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <ul class="skill-tags">
+            <li>JAVA</li>
+            <li>Spring Boot</li>
+            <li>JPA</li>
+            <li>MyBatis</li>
+            <li>Spring Security</li>
+            <li>JWT</li>
+            <li>WebSocket (STOMP)</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <ul class="skill-tags">
+            <li>Vue3</li>
+            <li>Pinia</li>
+            <li>Axios</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Database</h3>
+          <ul class="skill-tags">
+            <li>Oracle</li>
+            <li>MariaDB</li>
+            <li>MongoDB</li>
+            <li>Redis</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Infra</h3>
+          <ul class="skill-tags">
+            <li>AWS ECS Fargate</li>
+            <li>Docker</li>
+            <li>GitHub Actions CI/CD</li>
+            <li>Jenkins</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container reveal">
+      <div class="section-head">
+        <p class="section-tag">Work</p>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">팀 프로젝트로 진행한 세 가지 서비스입니다. 카드를 클릭하면 상세 내용을 볼 수 있어요.</p>
+      </div>
+      <div class="project-grid">
+        <a class="project-card" href="projects/gaekdam.html">
+          <div class="project-period">2026.01 – 2026.02 · 4인 팀</div>
+          <h3>Gaekdam – B2B 호텔 CRM</h3>
+          <p>예약·투숙·운영·자동 메시징을 통합 관리하는 SaaS 기반 호텔 CRM 시스템</p>
+          <ul class="project-stack">
+            <li>Spring</li><li>JAVA</li><li>Python</li><li>AWS</li><li>Vue</li><li>MariaDB</li><li>Redis</li>
+          </ul>
+          <span class="project-more">자세히 보기 <span class="arrow">→</span></span>
+        </a>
+        <a class="project-card" href="projects/linkee.html">
+          <div class="project-period">2025.10 – 2025.11 · 5인 팀</div>
+          <h3>Linkee-project</h3>
+          <p>실시간 퀴즈방을 생성하고 참여자들과 대화하며 문제를 풀어가는 CS 지식 학습 플랫폼</p>
+          <ul class="project-stack">
+            <li>Spring</li><li>JAVA</li><li>JPA</li><li>MongoDB</li><li>Redis</li><li>Vue</li><li>MyBatis</li>
+          </ul>
+          <span class="project-more">자세히 보기 <span class="arrow">→</span></span>
+        </a>
+        <a class="project-card" href="projects/jimwhere.html">
+          <div class="project-period">2025.12.01 – 2025.12.15 · 5인 팀</div>
+          <h3>JimWhere Project</h3>
+          <p>필요에 맞는 창고 및 보관함 공간을 선택하고 원하는 기간 예약하여 이용하는 공간 대여 플랫폼</p>
+          <ul class="project-stack">
+            <li>Spring</li><li>JAVA</li><li>JPA</li><li>Kubernetes</li><li>Jenkins</li><li>Redis</li><li>Vue</li>
+          </ul>
+          <span class="project-more">자세히 보기 <span class="arrow">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container reveal contact">
+      <p class="section-tag">Contact</p>
+      <h2 class="section-title">함께 이야기 나누고 싶습니다</h2>
+      <p class="section-desc" style="margin-left:auto;margin-right:auto;">
+        궁금한 점이나 협업 제안이 있다면 언제든 편하게 연락 주세요.
+      </p>
+      <div class="contact-links">
+        <a class="pill-link primary" href="mailto:kimsangjae94114@gmail.com">kimsangjae94114@gmail.com</a>
+        <a class="pill-link" href="tel:010-8280-2984">010-8280-2984</a>
+        <a class="pill-link" href="https://github.com/Kim-sangjae" target="_blank" rel="noopener">GitHub</a>
+        <a class="pill-link" href="https://blog.naver.com/rlatkdwo94" target="_blank" rel="noopener">Naver Blog</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">&copy; 2026 Kim Sangjae. All rights reserved.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

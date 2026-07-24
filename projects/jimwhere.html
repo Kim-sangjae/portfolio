@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JimWhere Project | 김상재 포트폴리오</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html#top" class="nav-logo">Kim<span>sangjae</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#career">Career</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="detail-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html#projects">Projects</a> / JimWhere Project</p>
+      <h1 class="detail-title">JimWhere Project</h1>
+      <p class="detail-summary">
+        사용자가 필요에 맞는 창고 및 보관함 공간을 선택하고, 원하는 기간 동안 예약하여 이용할 수 있는
+        공간 대여 플랫폼입니다. 단순한 공간 선택을 넘어, 실제 이용 흐름을 고려한 예약 관리와
+        사용자·관리자 기능을 함께 제공하는 것을 목표로 설계되었습니다.
+      </p>
+      <ul class="detail-stack">
+        <li>JAVA</li><li>JPA</li><li>Spring</li><li>Spring Security</li><li>JWT</li>
+        <li>Vue</li><li>MariaDB</li><li>Redis</li><li>Kubernetes</li><li>Jenkins</li>
+      </ul>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h4>개발 기간</h4>
+          <p>2025.12.01 ~ 2025.12.15</p>
+        </div>
+        <div class="info-card">
+          <h4>팀 구성</h4>
+          <p>5인 · 참여 프로젝트</p>
+        </div>
+        <div class="info-card">
+          <h4>담당 업무</h4>
+          <p>Spring Security·JWT 인증인가, 사용자 및 마이페이지, SMTP 이메일 인증, 사업자 인증 API 연동, k8s·Jenkins CI/CD</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:56px;">
+    <div class="detail-block reveal">
+      <h2>프로젝트 개요</h2>
+      <p style="color:var(--text-dim)">
+        사용자는 공간 유형과 위치, 이용 기간을 기준으로 보관 공간을 선택하고 예약을 생성할 수 있으며,
+        예약 정보는 기간 기반으로 관리되어 중복 예약을 방지합니다. 또한 결제가 완료된 예약만 실제
+        이용 내역으로 확정되도록 하여, 서비스 운영 관점에서의 데이터 일관성과 신뢰성을 확보했습니다.
+      </p>
+      <p style="color:var(--text-dim)">
+        관리자 입장에서는 전체 예약 현황과 이용 기간을 한눈에 파악하고, 결제 완료된 예약을 기준으로
+        공간 운영 및 관리가 가능하도록 구성되어 있습니다. JimWhere는 예약, 결제, 사용자 관리, 관리자
+        기능을 명확히 분리하여 설계되었으며, 향후 기능 확장과 유지보수를 고려한 구조를 기반으로 한
+        공간 대여 서비스입니다.
+      </p>
+    </div>
+
+    <div class="detail-block reveal">
+      <h2>담당 기능 개발</h2>
+      <ul class="feature-list">
+        <li>Spring Security, JWT 기반 인증인가</li>
+        <li>사업자 인증 및 문자인증을 통한 유저 인증</li>
+        <li>마이페이지를 통한 유저정보 조회</li>
+        <li>k8s, Jenkins를 통한 CI/CD</li>
+      </ul>
+    </div>
+
+    <div class="detail-block reveal">
+      <h2>Review</h2>
+      <p class="review-box">새로운 팀을 꾸려 짧은 기간내에 API, Vue, CI/CD까지 전부 작업하려니 조금 부족한 부분이 있었습니다.
+그만큼 팀원들과의 소통과 협업 방식이 더욱 중요하다는 것을 느끼게 된 프로젝트였으며,
+k8s, Jenkins를 직접 사용해보고 구축할 수 있던 좋은 경험이었습니다.</p>
+    </div>
+
+    <div class="detail-block reveal">
+      <h2>자료 링크</h2>
+      <div class="resource-links">
+        <a class="pill-link" href="https://embed.figma.com/design/n3rEnWyHXGEpve9oCY5dq7/JimWhere?node-id=0-1&p=f&embed-host=notion&footer=false&theme=system" target="_blank" rel="noopener">화면설계서 (Figma)</a>
+        <a class="pill-link" href="https://www.erdcloud.com/d/DzLxPEyKdLQzbJgxG" target="_blank" rel="noopener">DB 설계 (ERD Cloud)</a>
+        <a class="pill-link" href="https://github.com/JimWhere/jimwhere-projcet-dev" target="_blank" rel="noopener">GitHub 레포</a>
+      </div>
+    </div>
+
+    <div class="detail-block reveal">
+      <h2>개발 중 이슈</h2>
+
+      <div class="accordion">
+        <button class="accordion-trigger">
+          팀원과의 소통 <span class="plus">+</span>
+        </button>
+        <div class="accordion-panel">
+          <div class="accordion-panel-inner">새로운 팀을 꾸리면서 서로에 대한 교류가 없었기에, 가뜩이나 짧은 프로젝트 기간에 진행이 더뎠고
+소통방식, 협업방식을 제대로 정하지 않고 시작하여서 초반에는 서로의 기능들이나 작업들이 충돌이 있었습니다.
+더이상 진행이 더뎌지면 안될 것 같아 제가 나서서 깃허브 이슈관리를 통한 브랜치 작업을 나눴고
+큰 기능들을 서비스별로 나누어서 팀원들에게 각자 분배하였습니다.
+또, 매일 일일 회의와 진행상황 보고를 통한 서로의 진행도를 파악하고, 부족하거나 미흡한 부분들을
+서로 빠르게 보완할 수 있도록 진행하여 점점 더 안정되게 진행되었으며,
+결과적으로 기간 내에 예약, 결제, 공간재고 확인, 창고입장 인증 등 핵심 기능들을 시간 내에 완성시킬 수 있었습니다.</div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-trigger">
+          CI/CD의 어려움 <span class="plus">+</span>
+        </button>
+        <div class="accordion-panel">
+          <div class="accordion-panel-inner">이번 프로젝트에선 처음으로 CI/CD를 쿠버네티스, 젠킨스를 통해 진행해보았습니다.
+기간이 짧았던 만큼 생각보다 기능개발에 시간이 많이 들어갔고 CI/CD를 해볼 수 있던 시간은
+2~3일 정도로 짧았습니다.
+짧은 기간 내에 혼자서 처음 겪어보는 CI/CD 작업을 해보려니 많이 헤맸고
+어찌저찌 해내긴 했지만 끝내고도 부족하다는 것을 느꼈습니다.
+이번에 이렇게 짧은 기간 내에 진행하다 보니 확실히 더 체계적으로 기간을 잡아서
+촉박하게 마무리 짓는 일이 없도록 진행해야 된다는 걸 절실히 느꼈습니다.</div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-trigger">
+          사업자 인증 API <span class="plus">+</span>
+        </button>
+        <div class="accordion-panel">
+          <div class="accordion-panel-inner">사업자 인증 API를 사용해보면서 사업자 번호와, 그에 따라 이중으로 해당 사업자가 본인이 맞는지
+체크할 수 있도록 SMS 인증 서비스를 도입해보았는데, 실제 서비스를 운영하는 게 아니어서 실제
+사업자 번호와, 통신사 API를 통한 실제 사용자를 판별하는 SMS 서비스를 이용하는 데 한계가 있었습니다.
+
+허나 사업자번호가 실제 운영중인 서비스인지 확인 가능한 진위여부 API 인증과
+번호를 통한 SMS 인증 서비스를 임시로 구현하여 최소한의 인증절차를 구현해 놓았고,
+실제 서비스를 운영한다고 하면 실제 사업자를 인증하는 API와 통신사 API를 통한 이중 인증을 통해
+보다 확실하게 사업자를 인증하고 확인하는 과정을 할 수 있다는 것을 파악할 수 있었습니다.</div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="detail-nav">
+      <a href="../index.html#projects">← 프로젝트 목록</a>
+      <a href="linkee.html">다음: Linkee-project →</a>
+    </nav>
+  </main>
+
+  <footer>
+    <div class="container">&copy; 2026 Kim Sangjae. All rights reserved.</div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
