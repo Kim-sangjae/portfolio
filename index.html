@@ -161,9 +161,15 @@
       <div class="section-head">
         <p class="section-tag">Work</p>
         <h2 class="section-title">Projects</h2>
-        <p class="section-desc">팀 프로젝트로 진행한 세 가지 서비스입니다. 카드를 클릭하면 상세 내용을 볼 수 있어요.</p>
+        <p class="section-desc">카드를 클릭하면 상세 내용을 볼 수 있어요.</p>
       </div>
-      <div class="project-grid">
+
+      <div class="project-tabs" role="tablist">
+        <button class="tab-btn is-active" data-tab="general" role="tab" aria-selected="true">일반 프로젝트</button>
+        <button class="tab-btn" data-tab="ai" role="tab" aria-selected="false">AI 활용 프로젝트</button>
+      </div>
+
+      <div class="project-grid" data-tab-panel="general">
         <a class="project-card" href="projects/gaekdam.html">
           <div class="project-period">2026.01 – 2026.02 · 4인 팀</div>
           <h3>Gaekdam – B2B 호텔 CRM</h3>
@@ -188,6 +194,18 @@
           <p>필요에 맞는 창고 및 보관함 공간을 선택하고 원하는 기간 예약하여 이용하는 공간 대여 플랫폼</p>
           <ul class="project-stack">
             <li>Spring</li><li>JAVA</li><li>JPA</li><li>Kubernetes</li><li>Jenkins</li><li>Redis</li><li>Vue</li>
+          </ul>
+          <span class="project-more">자세히 보기 <span class="arrow">→</span></span>
+        </a>
+      </div>
+
+      <div class="project-grid is-hidden" data-tab-panel="ai">
+        <a class="project-card" href="projects/csora.html">
+          <div class="project-period">2026.06 – 진행중 · 1인 · <span class="ai-badge">Claude Code</span></div>
+          <h3>CSORA – CS 지식 학습 플랫폼</h3>
+          <p>자료구조·알고리즘·OS·네트워크·DB 등 1,500문제 이상을 제공하는 CS 퀴즈 서비스. 오답 복습 스케줄링과 실시간 1:1 대결을 지원하며 현재 실서비스 중</p>
+          <ul class="project-stack">
+            <li>Next.js 15</li><li>TypeScript</li><li>Supabase</li><li>Prisma</li><li>NextAuth</li><li>Vercel</li>
           </ul>
           <span class="project-more">자세히 보기 <span class="arrow">→</span></span>
         </a>
