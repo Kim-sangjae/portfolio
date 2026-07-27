@@ -566,6 +566,18 @@ footer {
   white-space: pre-line;
 }
 
+.feature-subhead {
+  margin: 0 0 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+}
+
+.feature-subhead:not(:first-child) {
+  margin-top: 22px;
+}
+
 .feature-list {
   list-style: none;
   display: flex;
